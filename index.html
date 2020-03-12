@@ -22,117 +22,168 @@ Projet 2 - Mission - Créer un site web pour présenter CV
     <link rel="stylesheet" href="css/style.css" />
 
     <title>DevWeb Freelance - 06 82 45 03 12</title>
+
+    <!-- CDN icônes fontawesome -->
+    <script src="https://kit.fontawesome.com/a7946aabc7.js" crossorigin="anonymous"></script>
+
   </head>
   <body>
     
-    <aside><img src="#" alt="Photo ID" /></aside>
-    <header>
-      <h1>PRENOM NOM</h1>
-      <p>Développeur web freelance</p>
-    </header>
+    <div class="container">
+      <div class="row">
+        <aside id="photoID" class="col-md-4 couleur_fond"><img src="images/myAvatar.png" alt="myAvatar" /></aside>
+        <header class="col-md-8">
+          <h1><span class="couleur_police">jérôme</span> s.</h1>
+          <p><span id="souligne">Dével</span>oppeur web freelance</p>
+        </header>
+      </div>
 
-    <aside>
-      <h2>CONTACT</h2>
-      <ul>
-        <li>Adresse<br/>Villiers Sur Marne, France</li>
-        <li>Téléphone<br/>06 82 45 03 12</li>
-        <li>Email<br/>nom@email.com</li>
-        <li>Site web<br/>www.github.com/SiteWeb/index.html</li>
-        <li>Skype<br/>@nom_dutilisateur</li>
-      </ul>
-    </aside>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="row couleur_fond">
+            <aside>
+              <h2 class="couleur_police">CONTACT</h2>
+              <p class="p_first">Adresse<br/>Val de Marne, France</p>
+              <p>Téléphone<br/>06 82 45 03 12</p>
+              <p>Email<br/>jeroso94@gmail.com</p>
+              <p>Site web<br/>https://jeroso94.github.io/</p>
+              <p class="p_last">Skype<br/>@jeroso94</p>
 
-    <section>
-      <article>
-        <h2><img src="#" alt="Icône formation" />FORMATION</h2>
-        <ul>
-          <li>
-            <table>
-              <tr>
-                <td>2000 - 2000<br/>Ville</td>
-                <td><h3>LIEU DE FORMATION</h3>
-                  <p>Parcours</p>
-                  <p>Détail du parcours</p>
-                </td>
-              </tr>
-            </table>
-          </li>
-          <li>
-            <table>
-              <tr>
-                <td>2000 - 2000<br/>Ville</td>
-                <td><h3>LIEU DE FORMATION</h3>
-                  <p>Parcours</p>
-                  <p>Détail du parcours</p>
-                </td>
-              </tr>
-            </table>
-          </li>
-        </ul>
-      </article>
+              <h2 class="couleur_police">à PROPOS DE MOI</h2>
+              <p id="apropos" class="p_first p_last">Agé de 41 ans, je suis originaire de l'ouest du Grands Paris (Yvelines). Très tôt j'ai été sensibilisé à l'informatique (Basic sur MO5&TO7) pendant l'école primaire, puis en fin de collège (rédaction de rapport de stages). C'est à partir de ce moment que nous avons acquis notre premier PC (386SX25 sous DOS 6.22 et Windows 3.11), puis notre premier modem (Surfmachine 11500 bauds/Olitec 33600). S'en est suivi la découverte d'internet, ses providers (AOL,Infonie,Club-internet,Free), partage de fichiers, moteurs de recherche (AOL/yahoo/lycos/google), sites web, messageries mail et chat en ligne. Mon projet de fin d'étude en informatique industrielle portait sur la mise en ligne d'un site web pour promouvoir la participation de mon école au SHELL Eco-Marathon en 1998.</p>
+              <h2 class="couleur_police">LOISIRS</h2>
+              
+              <div class="row" id="picto_loisirs">
+                <span class="fa-stack fa-2x">
+                  <i class="far fa-circle fa-stack-2x"></i>
+                  <i class="fas fa-hiking fa-stack-1x"></i>
+                </span>
 
-      <article>
-        <h1><img src="#" alt="Icône XP Professionnelle" />EXPERIENCE PROFESSIONNELLE</h1>
-        <ul>
-          <li>
-            <table>
-              <tr>
-                <td>2000 - Poste actuel<br/>Ville</td>
-                <td><h3>ENTREPRISE</h3>
-                  <p>Poste occupé</p>
-                  <p>Détail des projets</p>
-                </td>
-              </tr>
-            </table>
-          </li>
+                <span class="fa-stack fa-2x">
+                  <i class="far fa-circle fa-stack-2x"></i>
+                  <i class="fas fa-dice fa-stack-1x"></i>
+                </span>
 
-          <li>
-            <table>
-              <tr>
-                <td>2000 - 2000<br/>Ville</td>
-                <td><h3>ENTREPRISE</h3>
-                  <p>Parcours</p>
-                  <p>Détail des projets</p>
-                </td>
-              </tr>
-            </table>
-          </li>
-          <li>
-            <table>
-              <tr>
-                <td>2000 - 2000<br/>Ville</td>
-                <td><h3>ENTREPRISE</h3>
-                  <p>Parcours</p>
-                  <p>Détail des projets</p>
-                </td>
-              </tr>
-            </table>
-          </li>  
-        </ul>
-      </article>
+                <span class="fa-stack fa-2x">
+                  <i class="far fa-circle fa-stack-2x"></i>
+                  <i class="fas fa-map-marked-alt fa-stack-1x"></i>
+                </span>
+              </div>
 
-      <article>
-        <h2><img src="#" alt="Icône Recommandations" />RECOMMANDATIONS</h2>
-        <h3>PRENOM NOM</h3>
-        <p>Lien hierarchique, Entreprise</p>
-        <p>Téléphone : </p>
-        <p>Email : </p>
+            </aside>
+          </div>
+        </div>
 
-        <h3>PRENOM NOM</h3>
-        <p>Lien hierarchique, Entreprise</p>
-        <p>Téléphone : </p>
-        <p>Email : </p>
-      </article>
-    </section>
-    
-    <footer>
-      <h2>A PROPOS DE MOI</h2>
-      <p>... A Complêter ...</p>
-      <h2>LOISIRS</h2>
-      <img src="#" alt="Picto Loisir1" />
-      <img src="#" alt="Picto Loisir2" />
-      <img src="#" alt="Picto Loisir3" />
-    </footer>
+        <section class="col-md-8">
+          <article>
+            <div class="row entete_souligne">
+              <i class="fas fa-graduation-cap fa-3x couleur_police"></i>
+              <h2>FORMATION</h2>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4 detail_article">
+                  <i class="fas fa-bullseye couleur_police"></i><span>2020</span>
+                  <p class="ville">Paris</p>
+              </div>
+              <div class="col-md-8 detail_article">
+                <h3>OPENCLASSROOM</h3>
+                <p>Développeur web</p>
+                <p>Réalisation de 7 projets: Transformez votre CV en site Web, Dynamisez une page web avec des animations CSS, Optimisez un site web existant,  Construisez un site e-commerce,   Construisez une API sécurisée pour une application d'avis gastronomiques, Créez un réseau social d’entreprise.</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4 detail_article">
+                  <i class="fas fa-circle couleur_police"></i><span>1996 - 1998</span>
+                  <p class="ville">Hauts de Seine</p>
+              </div>
+              <div class="col-md-8 detail_article">
+                <h3>Lycée Technique</h3>
+                <p>Technicien supérieur en informatique industrielle</p>
+                <p>Programmation C/C++, assembleur Motorola 68000, Intel 8086, HTML, Javascript, JAVA. Création et publication en ligne d'un site web comme projet de fin d'études.</p>
+              </div>
+            </div>
+
+          </article>
+
+          <article>
+            <div class="row entete_souligne">
+              <i class="fas fa-briefcase fa-3x couleur_police"></i>
+              <h2>EXPERIENCE PROFESSIONNELLE</h2>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4 detail_article">
+                <i class="fas fa-bullseye couleur_police"></i><span>2009 - 2019</span>
+                <p class="ville">Paris</p>
+              </div>
+              <div class="col-md-8 detail_article">
+                <h3>Société de services</h3>
+                <p>Administrateur systèmes</p>
+                <p>Administration de systèmes Linux et Windows sur des plateformes en haute disponibilité. Mise en production des évolutions de versions. Installation des socles systèmes. Intervention sur indisponibilité d'un élément. Surveillance capacitaire et performance des plateformes. Industrialisation des tâches opérationnelles. Respect des normes de sécurité. Industrie des télécoms et du retail.
+</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4 detail_article">
+                <i class="fas fa-circle couleur_police"></i><span>2005 - 2009</span>
+                <p class="ville">Paris</p>
+              </div>
+              <div class="col-md-8 detail_article">
+                <h3>éditeur logiciel</h3>
+                <p>Consultant</p>
+                <p>Intégration d'une solution logicielle dédiée à la gestion des productions informatiques. Industrie du raffinage et du tertiaire, domaine judiciaire, laboratoire pharmaceutique, service publique.</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4 detail_article">
+                <i class="fas fa-circle couleur_police"></i><span>1998 - 2005</span>
+                <p class="ville">Hauts de seine</p>
+              </div>
+              <div class="col-md-8 detail_article">
+                <h3>Gestionnaire auto lld</h3>
+                <p>Technicien Micro-Réseaux</p>
+                <p>Gestion des incidents micro-informatiques et réseaux. Déploiement de patchs "Bug de l'an 2000". Masterisation des postes de travail. Secteur des assurances et des services financiers spécialisés.</p>
+              </div>
+            </div>
+
+          </article>
+
+          <article>
+
+            <div class="row entete_souligne">
+              <i class="fas fa-pencil-alt fa-3x couleur_police"></i>
+              <h2>RECOMMANDATIONS</h2>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 detail_article">
+                <div class="surbrillance"><h3>ISIDORE D.</h3>
+                <p>Responsable, Gestionnaire auto lld<br/>
+                Téléphone : 06 91 54 12 21</p></div>
+                <p>Réseau social : https://www.linkedin.com/in/isidored/</p>
+              </div>
+
+              <div class="col-md-6 detail_article">
+                <div class="surbrillance"><h3>GUYLAINE F.</h3>
+                <p>Chef de projet Web, Gestionnaire auto lld<br/>
+                Téléphone : 06 92 55 13 23</p></div>
+                <p>Réseau social : https://www.linkedin.com/in/guylaine-f/</p>
+              </div>
+
+            </div>
+
+          </article>
+        </section>
+        
+        <footer>
+          Tous droits réservés.
+        </footer>
+      </div>
+    </div>
 
 
     <!-- Optional JavaScript -->

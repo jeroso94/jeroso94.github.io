@@ -6,3 +6,152 @@ Par Jerome S.
 Parcours Developpeur Web (OpenClassrooms)
 Projet 2 - Mission - Créer un site web pour présenter CV
 */
+
+
+/* Mise en forme appliquée à la structure générale de la page */
+header, body{
+	font-family: Arial;
+}
+
+h2, h3{
+	font-weight: bold;
+}
+
+header{
+	align-self: center;
+}
+
+img{
+	width: 100%;
+}
+
+h1{
+	font-size: 3.3em;
+}
+
+h2{
+	font-size: 2.0em;
+}
+
+h3{
+	font-size: 1.5em;
+	text-transform: uppercase;
+}
+
+aside{
+	width: 100%;
+}
+
+footer{
+	font-size: 0.8em;
+}
+
+article{
+	padding-left: 70px;
+}
+
+/* Mise en forme appliquée sur des blocs plus précis dans la structure de page */
+header h1, header p{
+	margin-left: 60px;
+}
+
+header h1{
+	padding-top: 30px;
+	text-transform: uppercase;
+}
+
+header p{
+	font-size: 2.0em;
+	font-weight: bold;
+}
+
+aside img{
+	border : solid 5px rgba(0,0,0,0.1);
+	border-radius: 50%;
+}
+
+aside h2{
+	padding: 5px 0px 5px 0px;
+	background-color: black;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+aside p, article h2{
+	padding-left: 50px;
+}
+
+aside p{
+	padding-right: 50px;	
+}
+
+article .row{
+	padding-top: 50px;
+}
+
+article span{
+	padding-left: 25px;
+	font-weight: bold;
+}
+
+
+
+/* Mise en forme appliquée sur des classes de balises HTML */
+.couleur_fond{
+	background-color: #FFD600;
+}
+
+.couleur_police{
+	color: #FFD600;
+}
+
+.entete_souligne{
+	padding-bottom: 7px; 
+	border-bottom: solid #FFD600;
+}
+
+.row{
+	min-height: 100%;
+}
+
+.p_first{
+	padding-top: 25px;
+}
+
+.p_last{
+	padding-bottom: 25px;
+}
+
+.detail_article{
+	padding-left: 0px;
+}
+
+.ville{
+	padding-left: 40px;
+	font-weight: bold;
+}
+
+.surbrillance{
+	font-weight: bold;
+}
+
+
+
+/* Mise en forme appliquée sur des IDs de balises HTML */
+#souligne{
+	border-bottom: 2px solid #FFD600;
+	line-height: 1.2;
+}
+
+#picto_loisirs{
+	padding: 25px 0px 25px 0px;
+	justify-content: center;
+}
+
+#photoID{
+	padding: 50px 50px 40px 50px;
+}
+
+#apropos{
+	text-align: justify;
+}
