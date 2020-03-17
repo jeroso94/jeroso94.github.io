@@ -97,15 +97,15 @@ article span{
 
 
 /* Mise en forme appliquée sur des classes de balises HTML */
-.couleur_fond{
+.couleur-fond{
 	background-color: #FFD600;
 }
 
-.couleur_police{
+.couleur-police{
 	color: #FFD600;
 }
 
-.entete_souligne{
+.entete-souligne{
 	padding-bottom: 7px; 
 	border-bottom: solid #FFD600;
 }
@@ -114,15 +114,15 @@ article span{
 	min-height: 100%;
 }
 
-.p_first{
+.premier-p{
 	padding-top: 25px;
 }
 
-.p_last{
+.dernier-p{
 	padding-bottom: 25px;
 }
 
-.detail_article{
+.detail-article{
 	padding-left: 0px;
 }
 
