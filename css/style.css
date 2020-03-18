@@ -11,6 +11,7 @@ Projet 2 - Mission - Créer un site web pour présenter CV
 /* Mise en forme appliquée à la structure générale de la page */
 header, body{
 	font-family: Arial;
+	font-size: 1.0em;
 }
 
 h2, h3{
@@ -26,15 +27,15 @@ img{
 }
 
 h1{
-	font-size: 3.3em;
+	font-size: 2.5em;
 }
 
 h2{
-	font-size: 2.0em;
+	font-size: 1.3em;
 }
 
 h3{
-	font-size: 1.5em;
+	font-size: 1.0em;
 	text-transform: uppercase;
 }
 
@@ -47,21 +48,20 @@ footer{
 }
 
 article{
-	padding-left: 70px;
+	padding-left: 25px;
 }
 
 /* Mise en forme appliquée sur des blocs plus précis dans la structure de page */
 header h1, header p{
-	margin-left: 60px;
+	margin: 5px 5px 5px 10px;
 }
 
 header h1{
-	padding-top: 30px;
 	text-transform: uppercase;
 }
 
 header p{
-	font-size: 2.0em;
+	font-size: 1.5em;
 	font-weight: bold;
 }
 
@@ -81,16 +81,22 @@ aside h2{
 	text-transform: uppercase;
 }
 
-aside p, article h2{
-	padding-left: 50px;
+aside p{
+	margin-left: 50px;
+	margin-right: 50px;
 }
 
-aside p{
-	padding-right: 50px;	
+article{
+	margin-right: 2.0em;
 }
 
 article .row{
 	padding-top: 50px;
+}
+
+article h2{
+	margin-left: 1.0em;
+	align-self: center;
 }
 
 article span{
@@ -114,16 +120,12 @@ article span{
 	border-bottom: solid #FFD600;
 }
 
-.row{
-	min-height: 100%;
-}
-
 .premier-p{
-	padding-top: 25px;
+	margin-top: 25px;
 }
 
 .dernier-p{
-	padding-bottom: 25px;
+	margin-bottom: 25px;
 }
 
 .detail-article{
@@ -140,7 +142,6 @@ article span{
 }
 
 
-
 /* Mise en forme appliquée sur des IDs de balises HTML */
 #souligne{
 	border-bottom: 2px solid #FFD600;
@@ -148,7 +149,7 @@ article span{
 }
 
 #picto_loisirs{
-	padding: 25px 0px 25px 0px;
+	margin: 25px 0px 30px 0px;
 	justify-content: center;
 }
 
@@ -158,4 +159,59 @@ article span{
 
 #apropos{
 	text-align: justify;
+}
+
+
+/* Media Queries pour adapter la taille des caractères & mise en page */ 
+@media screen and (min-width: 768px){
+	header, body{
+		font-size: 1.0em;
+	}
+
+	h1{
+		font-size: 3.5em;
+	}
+
+	h2{
+		font-size: 1.9em;
+	}
+
+	h3{
+		font-size: 1.5em;
+	}
+
+	header h1, header p{
+		margin: 5px 5px 5px 60px;
+	}
+
+	header p{
+		font-size: 2.0em;
+	}
+
+	article{
+		margin-left: 70px;
+		margin-right: 3.5em;
+	}
+
+	article h2{
+		margin-left: 1.5em;
+	}
+
+	#apropos{
+		margin-bottom: 650px;
+	}
+}
+
+@media screen and (min-width: 992px){
+	h1{
+		font-size: 5.0em;
+	}
+
+	h2{
+		font-size: 2.6em;
+	}
+
+	h3{
+		font-size: 1.5em;
+	}
 }
