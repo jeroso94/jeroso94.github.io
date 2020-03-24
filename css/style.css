@@ -9,6 +9,10 @@ Projet 2 - Mission - Créer un site web pour présenter CV
 
 
 /* Mise en forme appliquée à la structure générale de la page */
+body{
+	max-width: 1200px;
+}
+
 header, body{
 	font-family: Arial;
 	font-size: 1.0em;
@@ -175,7 +179,7 @@ article span{
 	}
 
 	h2{
-		font-size: 1.9em;
+		font-size: 1.8em;
 	}
 
 	h3{
@@ -197,7 +201,7 @@ article span{
 
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 992px){
 	#apropos{
 		margin-bottom: 650px;
 	}
@@ -209,7 +213,7 @@ article span{
 	}
 
 	h2{
-		font-size: 2.3em;
+		font-size: 2.1em;
 	}
 
 	h3{
